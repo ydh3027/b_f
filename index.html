@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>비오페이스</title>
+    <link rel="shortcut icon" type="image/x-icon" href="b_f_img/bioface_he2_icon.ico">
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <link href="./css/pc_layout01.css" rel="stylesheet" type="text/css">
+    <link href="./css/m_layout.css" rel="stylesheet" type="text/css">
+    <link href="./css/t_layout.css" rel="stylesheet" type="text/css">
+    <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+     <!--6. 아이콘폰트 주소--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="./script/prefixfree.min.js"></script>
+    <script src="./js/swiper.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="toggle">
+    <!--상단헤더-->
+    <header>
+    <div class="header_top">
+      <h1>
+        <a href="index01.html" title="메인페이지로 바로가기">
+          <img src="./b_f_img/logo.png" alt="상단로고">
+        </a>
+      </h1>
+
+      <!--오른쪽 상단 lnb메뉴-->
+      <nav class="lnb">
+        <ul>
+          <li><a href="login.html" title="로그인">로그인</a></li>
+          <li><a href="join.html" title="회원가입">회원가입</a></li>
+          <li><a href="order.html" title="상담예약">상담예약</a></li>
+          <li><a href="cart.html" title="이벤트">이벤트</a></li>
+        </ul>
+      </nav>
+
+      <!--검색폼-->
+      <fieldset>
+        <legend>검색</legend>
+        <input type="search" id="search" placeholder="이달의 특가 5%" maxlength="50">
+        <label for="search" class="fas fa-search"><span>검색버튼</span></label>
+      </fieldset>
+    </div>
+    
+    <label for="toggle" class="fas fa-bars"></label>
+    
+    <!--헤더영역 아래 콘텐츠(메인 네비게이션)-->
+    <div class="header_bottom">
+      <label for="toggle" class="fas fa-times"></label>
+      <nav class="gnb">
+        <ul>
+          <li><a href="a.html" title="병원소개">병원소개</a>
+            <ul class="sub">
+              <li><a href="a.html">WhyBioface</a></li>
+              <li><a href="a01.html">의료진 소개</a></li>
+              <li><a href="as02.html">진료안내</a></li>
+              <li><a href="as03.html">오시는길</a></li>
+              <li><a href="as04.html">보유장비</a></li>
+              <li><a href="as05.html">사회공헌</a></li>
+              <li><a href="as06.html">맴버십</a></li>
+            </ul>
+          </li>
+          <li><a href="b.html" title="베스트">베스트</a>
+            <ul class="sub">
+              <li><a href="b.html">베스트</a></li>
+              <li><a href="bs02.html">이벤트</a></li>
+              <li><a href="bs03.html">프로모션</a></li>
+            </ul>
+          </li>
+          <li><a href="c.html" title="페이스라인">페이스라인</a>
+            <ul class="sub">
+              <li><a href="c.html">리프톡스</a></li>
+              <li><a href="cs02.html">보톡스</a></li>
+              <li><a href="cs03.html">필러</a></li>
+              <li><a href="cs04.html">윤곽주사</a></li>
+              <li><a href="cs05.html">불독주사</a></li>
+            </ul>
+          </li>
+          <li><a href="d.html" title="안티에이징">안티에이징</a>
+            <ul class="sub">
+              <li><a href="d.html">리프팅</a></li>
+              <li><a href="ds02.html">실리프팅</a></li>
+              <li><a href="ds03.html">동안주사</a></li>
+            </ul>
+          </li>
+          <li><a href="e.html" title="바디라인">바디라인</a>
+            <ul class="sub">
+              <li><a href="e.html">올핏</a></li>
+              <li><a href="es02.html">리포소닉</a></li>
+              <li><a href="es03.html">바디보톡스</a></li>
+              <li><a href="es04.html">바디써머지</a></li>
+              <li><a href="es05.html">바디인모드</a></li>
+              <li><a href="es06.html">바디슈링크</a></li>
+              <li><a href="es07.html">윤곽주사</a></li>
+              <li><a href="es08.html">피스톤주사</a></li>
+            </ul>
+          </li>
+          <li><a href="f.html" title="피부레이저">피부레이저</a>
+            <ul class="sub">
+              <li><a href="f.html">클라리티</a></li>
+              <li><a href="fa02.html">제네시스</a></li>
+              <li><a href="fa03.html">부스타프락셀</a></li>
+              <li><a href="fa04.html">퓰라듀오</a></li>
+              <li><a href="fa05.html">LDM</a></li>
+            </ul>
+          </li>
+          <li><a href="g.html" title="제모">제모</a>
+            <ul class="sub">
+              <li><a href="g.html">여성제모</a></li>
+              <li><a href="gs02.html">남성제모</a></li>
+              <li><a href="gs03.html">다한증</a></li>
+            </ul>
+          </li>
+          <li><a href="h.html" title="커뮤니티">커뮤니티</a>
+            <ul class="sub">
+              <li><a href="h.html">바이오메디</a></li>
+              <li><a href="hs02.html">리얼후기</a></li>
+              <li><a href="hs03.html">칭찬&불만</a></li>
+              <li><a href="hs04.html">상담&예약</a></li>
+              <li><a href="hs05.html">제휴&채용</a></li>
+              <li><a href="hs06.html">질문과답변</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>  
+    </header>
+    
+    <!--메인콘텐츠-->
+    <main>
+     <article class="slide">
+      <h3>슬라이드</h3>
+      <div class="swiper-container main_slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide quadrado">
+            <a href="aa.html" title="동안의 시작, 비오페이스">
+            <img src="./b_f_img/bg01.jpg" alt="동안의 시작, 비오페이스">
+            </a>
+          </div>
+          <div class="swiper-slide quadrado">
+            <a href="bb.html" title="믿을 수 있는, 비오페이스">
+            <img src="./b_f_img/bg02.jpg" alt="믿을 수 있는, 비오페이스">
+            </a>
+          </div>
+          <div class="swiper-slide quadrado">
+            <a href="cc.html" title="본연의 아름다움, 비오페이스">
+            <img src="./b_f_img/bg03.jpg" alt="본연의 아름다움, 비오페이스">
+            </a>
+          </div>
+          <div class="swiper-slide quadrado">
+            <a href="dd.html" title="ONLY ONE, 비오페이스">
+            <img src="./b_f_img/bg04.jpg" alt="ONLY ONE, 비오페이스">
+            </a>
+          </div>
+          <div class="swiper-slide quadrado">
+            <a href="ee.html" title="리프톡스">
+            <img src="./b_f_img/bg05.jpg" alt="리프톡스">
+            </a>
+          </div>
+          <div class="swiper-slide quadrado">
+            <a href="ff.html" title="울쎄라 GOLD">
+            <img src="./b_f_img/img_slider_lg.png" alt="울쎄라 GOLD">
+            </a>
+          </div>
+        </div>
+        <div class = "swiper-pagination"></div>
+        <div class = "swiper-button-next"></div>
+        <div class = "swiper-button-prev"></div>
+      </div>
+      
+    </article><!--전체 배경이기 때문에 div태그를 사용하지 않음-->
+     
+    <div class="free_ex"><!--전체 배경이 다 들어갈때 div태그를 한번 더 감싸준다-->
+      <article>
+        <h3>비오페이스 프로모션</h3>
+        <img src="./b_f_img/sns21.png" alt="비오페이스 프로모션" id="free_img">
+        <div class="free_ex_right">
+          <h3><img src="./b_f_img/ico_notice.png" alt="프로모션"><br>
+          비오페이스 <strong>프로모션</strong></h3>
+          <p>비오페이스의 프로모션입니다</p>
+          <a href="#" title="프로모션" class="button">프로모션</a>
+        </div>
+      </article>
+    </div>
+    <article class="shop">
+      <h3><img src="./b_f_img/ico_notice.png" alt=" 주문하기"><strong>비오페이스</strong> 클리닉
+      </h3>
+      <p class="p_center">
+        <a href = "#" title="" class="button">바로가기</a>
+      </p>
+
+      <div class="swiper shop_slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+             <!--상품목록-->
+             <ul>
+               <li>
+                 <img src="./b_f_img/bg01.png" alt="상품1">
+                 <div class="info">
+                    <h4>이노톡스</h4>
+                    <p>내성과 부작용 최소화</p>
+                    <p>50g  &#x00d7;1</p>
+                    <span class="price">견적가 : 210,000원</span>
+                    <p><span class="button">예약하기</span></p>
+                  </div>
+               </li>
+               <li>
+                <img src="./b_f_img/bg02.png" alt="상품2">
+                <div class="info">
+                  <h4>코어톡스</h4>
+                  <p>신경독소만 정제</p>
+                  <p>50g  &#x00d7;1</p>
+                  <span class="price">견적가 : 400,000원</span>
+                  <p><span class="button">예약하기</span></p>
+                 </div>
+              </li>
+             </ul>
+          </div>
+          <div class="swiper-slide">
+            <ul>
+              <li>
+                <img src="./b_f_img/bg03.png" alt="상품3">
+                <div class="info">
+                  <h4>제오민</h4>
+                  <p>항체생성</p>
+                  <p>50g  &#x00d7;1</p>
+                  <span class="price">견적가 : 590,000원</span>
+                  <p><span class="button">예약하기</span></p>
+                 </div>
+              </li>
+              <li>
+               <img src="./b_f_img/img_sm01.png" alt="상품4">
+               <div class="info">
+                 <h4>티오필</h4>
+                 <p>꺼지지않는 볼륨</p>
+                 <p>50g  &#x00d7;1</p>
+                 <span class="price">견적가 :690,000원</span>
+                 <p><span class="button">예약하기</span></p>
+                </div>
+             </li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-pagination dot"></div>
+      </div>
+    </article><!--전체 배경이 없기때문에 div태그를 사용하지 않는다-->
+     
+    <div class="story"><!--전체 배경이 다 들어갈때 div태그를 한번 더 감싸준다-->
+      <article>
+        <div class="story_left">
+          <h3>
+            <img src="./b_f_img/ico_notice.png"
+            alt=" 아이콘" ><strong>비오페이스 </strong>스토리
+          </h3>
+          <p>
+            아름다움 그이상의 만족, 뷰티플레이스<br>첨단의료 장비, 두발 앞선 시술법
+          </p>
+          <a href = "js.html" title="자세히보기" class="button">자세히보기</a>
+        </div>
+          <img src ="./b_f_img/img_slider01.jpg" alt="랜덤이미지" id="s_img" class="s_img">
+      </article>
+    </div>
+    <article class="instar">
+      <h3>
+        instargram
+      <span class="id_name">@bioface</span>
+      </h3>
+      <ul class="gallery">
+        <li><a href = "g01.html" title="갤러리1"><img src="./b_f_img/i01.png" alt="갤러리1"></a></li>
+        <li><a href = "g02.html" title="갤러리2"><img src="./b_f_img/i02.png" alt="갤러리2"></a></li>
+        <li><a href = "g03.html" title="갤러리3"><img src="./b_f_img/i03.png" alt="갤러리3"></a></li>
+        <li><a href = "g04.html" title="갤러리4"><img src="./b_f_img/i04.png" alt="갤러리4"></a></li>
+        <li><a href = "g05.html" title="갤러리5"><img src="./b_f_img/i05.png" alt="갤러리5"></a></li>
+        <li><a href = "g06.html" title="갤러리6"><img src="./b_f_img/i06.png" alt="갤러리6"></a></li>
+        <li class="m"><a href = "g07.html" title="갤러리7"><img src="./b_f_img/i07.png" alt="갤러리7"></a></li>
+        <li class="m"><a href = "g08.html" title="갤러리8"><img src="./b_f_img/i08.png" alt="갤러리8"></a></li>
+        <li class="m"><a href = "g09.html" title="갤러리9"><img src="./b_f_img/i09.png" alt="갤러리9"></a></li>
+        <li class="m"><a href = "g10.html" title="갤러리10"><img src="./b_f_img/i10.png" alt="갤러리10"></a></li>
+        <li class="m"><a href = "g11.html" title="갤러리11"><img src="./b_f_img/i11.jpg" alt="갤러리11"></a></li>
+        <li class="m"><a href = "g12.html" title="갤러리12"><img src="./b_f_img/i12.png" alt="갤러리12"></a></li>
+      </ul>
+    </article><!--전체 배경이 없기때문에 div태그를 사용하지 않는다-->
+  </main>
+  
+  
+    
+    <!--푸터-->
+  <footer>
+    <a href="#" title="위로가기" class="top">top</a>
+    <div class="f_top">
+      <nav class="f_nav">
+        <ul class="f_lnb">
+          <li><a href="b0001.html" title="개인정보처리방침">개인정보처리방침</a></li>
+          <li><a href="e0001.html" title="이용약관">이용약관</a></li>
+        </ul>
+        <dl>
+          <dt>공지사항</dt>
+          <dd><a  href="list.html" 
+            title="확장이전">확장이전&홈피개편 특별기획 2탄#포토존 인증샷 이벤트 #6 홈페이지 캡쳐 이벤트</a><span>[2021-03-05]</span></dd>
+        </dl>
+      </nav>
+      </nav>
+    </div>
+    <div class="f_info">
+      <dl>
+        <dt>푸터영역 정보</dt>
+        <dd>
+          <h3>주문 및 배송문의</h3>
+          <p class="number">1833-8838</p>
+          <p>평일 am10:00 ~ pm20:30(점심13:00 ~ 14:00)</p>
+        </dd>
+        <dd>
+          <h3>고객센터</h3>
+          <p class="number">1833-8839</p>
+          <p>토요일 am10:00 ~ pm16:00(점심시간 없음)</p>
+          </dd>
+        <dd class="sns">
+          <a href="i.html" title="인스타" class="fab fa-instagram"><span>인스타그램</span></a>
+          <a href="t.html" title="트위터" class="fab fa-twitter"><span>트위터</span></a>
+          <a href="f.html" title="페이스북" class="fab fa-facebook-f"><span>페이스북</span></a>
+        </dd>
+        <dd class="siteurl">
+          <label  for="family">패밀리사이트</label>
+          <select onchange="siteurl(this)" id="family">
+            <option value="a.html">FAMILY SITE</option>
+            <option value="http://www.daum.net">비오페이스 다음</option>
+            <option value="http://www.naver.com">비오페이스 네이버</option>
+            <option value="http://www.bioface.kr">비오페이스 본점</option>
+          </select>
+        </dd>
+      </dl>
+    </div>
+    <address>
+      <p class="a_info">서울특별시 서초구 강남대로 605 휴먼타워 10층 신사역 4번출구  &#65372; 상호 및 대표자 : 박주영 
+        비오페이스의원 &#124; 사업자번호 : 605-25-72864 &#124; 통신판매업신고번호 :제1234567
+        -서울시 강남구 사업자정보확인 &#2124;호스팅서비스 제공자 : 비오페이스 E-mail : bioface@naver.co.kr
+        Copyright ⓒ 2020 bioface All rights reserved.
+
+      </p>
+      <p class="a_pay">구매안전(에스크로)서비스 가입시실 확인
+        고객님은 안전거래를 위해 현금등으로 결재시
+        저희 쇼핑몰에 가입한 KCP의 구매안전서비스를
+        이용할실 수 있습니다.</p>
+    </address>
+  
+  
+  
+  
+  
+  
+  
+  </footer>
+  <!--메인 슬라이드 동작을 위한 스크립트-->
+  <script>
+    let swiper = new Swiper('.main_slide',{
+      autoplay:{
+      delay:4000,
+      disableOnInteraction:false,
+      },
+      navigation:{
+      nextEl : "swiper-button-next",
+      prevEl : "swiper-button-prev",
+      },
+      pagination : {
+      el:".swiper-pagination",
+      clickable:true,
+      }
+    });
+
+    /**/
+    let shop = new Swiper('.shop_slide',{
+      pagination : {
+      el:".swiper-pagination",
+      clickable:true,
+      }
+    });
+    
+    //랜덤숫자//
+    let n = Math.floor(Math.random()*2+1);
+    console.log(n);
+    document.getElementById('free_img').src="./b_f_img/sns2" + n + ".png";
+
+    //랜덤숫자//
+    let n1 = Math.floor(Math.random()*2+1);
+    console.log(n1);
+    document.getElementById('s_img').src="./b_f_img/img_slider0" + n + ".jpg";
+
+    function siteurl(a){//함수
+      //alert('사용자가 목록을 선택하였습니다.');
+      if(a.value!='none'){//만약에 사용자가 선택한 항목에 데이터url값이 존재하느냐? 값이 있을때만 아래 내용실행.
+        window.open(a.value, '_self');//해당 url주소로 현재창에서 이동한다.
+      }else{//그렇지 않으면 ==사용자가 선택을 안하거나 familysite메뉴를 누른경우
+        return;//아무일도 일어나지 않는다
+      }
+    }
+  </script> 
+  
+  </body>
+</html>

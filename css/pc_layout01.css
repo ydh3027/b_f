@@ -1,0 +1,484 @@
+@charset "utf-8";
+
+/*상단헤더*/
+header{
+  height: 170px;
+  background-image: url(../b_f_img/bg_banner01.jpg);
+}
+label.fa-bars, label.fa-times{
+  display:none;
+}
+
+.header_top{
+  width: 1200px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.header_top > h1{
+  position: relative;
+  top: 40px;
+  width: 200px;
+}
+
+.header_top > h1 img{width: 100%;}
+
+.lnb{
+  transform: translateY(-35px);
+}
+.lnb > ul{
+  display: flex;
+  justify-content: flex-end;
+}
+.lnb > ul > li{
+  margin: 0px 10px;
+}
+.lnb > ul > li > a{
+  color: #000;
+  font-size: 13px;
+}
+.lnb > ul > li > a:hover{
+  text-decoration: underline;
+}
+
+/*검색서식*/
+.header_top > fieldset{
+  position: absolute;
+  right: 0px;top: 80px;
+  border: none;
+}
+fieldset > legend{display: none;}
+
+fieldset #search{
+  width: 230px;height: 30px;
+  border-radius: 26px;
+  text-align: center;
+  border: 1px solid #2a2922;
+}
+
+.fa-search span{display: none;}
+label.fa-search{
+  font-size:20px ;
+  transform: translate(-34px,4px);
+}
+
+/*gnb 서식*/
+.header_bottom{
+  width: 100%;
+  height: 48px;
+  background-color: rgba(255,255,255,0.9);
+  position: absolute;
+  top: 122px;
+  z-index: 100;
+  overflow: hidden;/*해당하는 영역을 벗어난 콘텐츠 숨김.
+  서브메뉴 숨김*/
+  transition: 0.5s;/*서브메뉴 부드럽게 펼쳐짐*/
+}
+
+.header_bottom:hover{
+  height: 480px;
+}
+
+.gnb{
+  background-color: #4B4B4B;
+  height: 48px;
+}
+.gnb > ul{
+  width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.gnb > ul > li{
+  line-height: 48px;
+  text-align: center;
+  position: relative;/*공식*/
+  padding: 0px 40px;
+}
+.gnb > ul > li >a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  /*border-right: 1px solid #ccc;*/
+}
+
+.gnb > ul > li >a:after{
+  width: 1px;height: 10px;
+  background: #ccc;
+  content: "";
+  display: block;
+  position: relative;
+  top: -28px;
+}
+.gnb > ul > li:first-child > a:after{left: 98px;}
+.gnb > ul > li:nth-child(2) > a:after{left: 80px;}
+.gnb > ul > li:nth-child(3) > a:after{left:110px;}
+.gnb > ul > li:nth-child(4) > a:after{left: 110px;}
+.gnb > ul > li:nth-child(5) > a:after{left: 98px;}
+.gnb > ul > li:nth-child(6) > a:after{left: 110px;}
+.gnb > ul > li:nth-child(7) > a:after{left: 70px;}
+.gnb > ul > li:last-child > a:after{display: none;}
+
+.sub{
+  position: absolute;/*공식*/
+  width: 100%;
+  left: 0px;
+  transform: translateY(40px);
+}
+.sub:last-child{
+  top: 10px;
+}
+
+.sub > li >a{
+  font-size: 14px;
+}
+.sub > li >a:hover{
+  text-decoration: underline;
+}
+
+
+/*메인*/
+/*슬라이드 애니메이션*/
+
+.quadrado {
+  width: 100%;
+  overflow: hidden;
+}
+.quadrado img{animation: crescendo 8s alternate infinite ease-in;}
+@keyframes crescendo {
+  0%   {transform: scale(1);}
+  100% {transform: scale(1.5);}
+}
+
+.slide > h3{display: none;}
+.slide img{width: 100%;}
+
+/*하림펫 무료체험*/
+.free_ex{
+  width: 100%;
+  height: 530px;
+ background-image: url(../b_f_img/bg_top_lg.png);
+}
+
+.free_ex article{
+  height: 500px;
+  padding: 15px 0px;
+  width: 1200px;
+  margin: 0px auto;
+  
+}
+.free_ex >article > h3{display: none;}
+
+.free_ex article > h3 + img{
+  float: left;
+  width: 430px;
+  padding: 30px 0px 0px 120px;
+}
+.free_ex_right{
+  text-align: center;
+  padding-top: 60px;
+}
+.free_ex_right > h3{
+  font-size: 36px;
+  color: #fff;
+  font-weight: 200;
+  padding-top: 30px;
+  padding-bottom: 16px;
+} 
+.free_ex_right p{
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 90px;
+}
+.free_ex_right img{padding-bottom: 10px;}
+.button{
+ background: #fff;
+  font-size: 16px;
+  padding: 6px 30px;
+  border: 1px solid #43c3c4;
+  transition: 0.5s;
+  color: #43c3c4;
+}
+.button:hover{
+  color: #fff;
+  background: #43c3c4;
+}
+
+/*쇼핑 서식*/
+.shop{
+  width: 1200px;
+  margin: 0px auto;
+  padding: 60px 0px;
+  overflow: hidden;
+}
+.shop > h3{
+  font-size: 36px;
+  text-align: center;
+  padding: 20px 0px 60px 0px;
+  font-weight: 200;
+}
+.shop > h3 img{
+  width: 40px;
+  padding-right: 10px;
+  transform: translateY(8px);
+}
+
+.p_center{
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+/*스와이퍼 슬라이드-상품목록*/
+.shop_slide{
+  width: 1200px;
+  position: relative;
+}
+.shop_slide .swiper-slide{
+  height: 400px;
+}
+
+.shop_slide .swiper-slide img{
+  width: 280px;
+  float: left;
+}
+.swiper-slide > ul{
+  padding: 0px 30px;
+  box-sizing: border-box;
+  display: flex;
+}
+.swiper-slide > ul > li{
+  width: 50%;
+
+}
+/*상품상세 정보*/
+.info{
+  padding-top: 20px;
+  font-size: 18px;
+  transform: translateX(20px);
+  
+}
+.info > h4{
+  font-weight: 500;
+  font-size: 18px;
+}
+.f_info > p{line-height: 40px;}
+.info > .price{
+  padding-top: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #f00;
+  display: inline-block;/*span태그의 성격을 바꿔줌*/
+}
+.info p:last-of-type{
+  padding: 30px 0px 0px 0px;
+}
+
+.story{
+  background-image: url(../b_f_img/bg_lg01.jpg);
+  height: 620px;
+}
+.story article{
+  width: 1200px;height: 590px;
+  padding: 15px 0px;
+  margin: 0px auto;
+}
+.story article h3{
+  font-size: 36px;
+  color: #333;
+  font-weight: 200;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.story article h3 img{
+  width: 40px;
+  padding-right: 10px;
+  
+}
+
+.story .s_img{
+  float: right;
+  width: 430px;
+  padding: 70px 120px 0px 0px;
+  
+}
+.story_left{
+  width: 650px;
+  float: left;
+  text-align: center;
+}
+
+.story_left p{
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 90px;
+}
+
+.instar{
+  width: 1200px;
+  margin: 0px auto;
+  padding: 90px 0px 50px 0px;
+}
+.instar > h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 200;
+  margin-bottom: 80px;
+
+}
+.instar > h3 > img{
+  transform: translateY(9px);
+  padding-right: 10px;
+}
+.id_name{
+  text-transform: lowercase;
+  font-size: 18px;
+  display: block;
+  padding: 10px 0px;
+}
+.gallery{
+  margin: 0px auto;
+  width: 1000px;
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-columns:repeat(4,auto);
+  grid-template-rows: repeat(3,200px);
+}
+.gallery > li{
+  overflow: hidden;
+}
+.gallery > li img{
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.gallery > li img:hover{
+  transform: scale(1.1);
+  filter:opacity(0.7) drop-shadow(0 0 0 #43c3c4);
+}
+ 
+.top{
+  padding: 30px;
+  color: #fff;
+  background-color: #43c3c4;
+  border-radius: 1%;
+  font-size: 20px;
+  float: right;
+  transform: translateY(-80px);
+}
+
+/*푸터*/
+footer{
+  background-image: url(../b_f_img/bg_contact_lg.jpg);
+  height: 360px;
+  
+  
+}
+.f_top{
+  background: #989898;
+  height: 60px;
+}
+.f_nav,.f_info,address{
+  width: 1200px;
+  margin: 0px auto;
+}
+
+.f_lnb{
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+}
+
+.f_lnb > li{
+  position: relative;/*기준*/
+}
+.f_lnb > li >a{
+  line-height: 60px;
+  font-weight: bold;
+}
+.f_lnb > li >a:hover{
+  text-decoration: underline;
+}
+.f_lnb > li:first-child a::after{
+  width: 1px;height: 10px;
+  background: rgb(61,61,61);
+  content: "";
+  display: block;
+  position: absolute;/**/
+  top: 26px;left: 105px;
+}
+.f_nav dl{
+  width: 500px;
+  float: right;
+  display: flex;
+  transform: translateY(-37px);
+  font-size: 13px;
+  color: #fff;
+  
+}
+.f_nav dt{margin-right: 16px;}
+
+.f_nav dd a{
+  color: #fff;
+  width: 270px;
+  display: inline-block;
+  text-overflow: ellipsis;/*영역을 벗어난 글자 숨기기*/
+  overflow: hidden;/*생략기호*/
+  white-space: nowrap;/*다음줄 넘기지 않기*/
+}
+.f_info{
+  clear: right;
+  height: 144px;
+}
+.f_info dl{
+  display: flex;
+  justify-content: space-around;
+}
+.f_info dt{display: none;}
+.f_info dd{
+  font-size: 18px;
+  color: rgb(232,232,232);
+  line-height: 46px;
+}
+.number{
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
+.sns a{
+  color: #fff;
+  font-size: 30px;
+  padding: 0px 10px;
+}
+.sns span, .siteurl label{display: none;}
+.sns, .siteurl{
+  transform: translateY(50px);
+}
+.siteurl select{
+  width:220px ;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #7e7e7e;
+
+}
+
+/*주소영역*/
+footer address{
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ccc;
+  line-height: 24px;
+  font-style: normal;
+}
+footer address > .a_info{
+  float: left;width: 600px;
+  margin-right: 60px;
+}
+footer address > .a_pay{
+  float: left;width: 300px;
+}
